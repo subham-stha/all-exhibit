@@ -57,6 +57,22 @@ function theme_acf_blocks_init() {
             'icon'              =>  'slides',
             'keywords'          =>  array('Partner block')
         ));
+        acf_register_block(array(
+            'name'              => 'ctatext-block',
+            'title'             => __('CTA Text Block'),
+            'render_callback'   => 'theme_acf_block_render',
+            'category'          => 'allexhibit-blocks',
+            'icon'              =>  'slides',
+            'keywords'          =>  array('CTA with text')
+        ));
+        acf_register_block(array(
+            'name'              => 'service-block',
+            'title'             => __('Services Block'),
+            'render_callback'   => 'theme_acf_block_render',
+            'category'          => 'allexhibit-blocks',
+            'icon'              =>  'slides',
+            'keywords'          =>  array('AllEx services','services we offer')
+        ));
     }
 }
 
