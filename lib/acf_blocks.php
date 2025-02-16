@@ -49,6 +49,14 @@ function theme_acf_blocks_init() {
             'icon'              =>  'slides',
             'keywords'          =>  array('Hero banner','hero')
         ));
+        acf_register_block(array(
+            'name'              => 'partner-block',
+            'title'             => __('Partners Block'),
+            'render_callback'   => 'theme_acf_block_render',
+            'category'          => 'allexhibit-blocks',
+            'icon'              =>  'slides',
+            'keywords'          =>  array('Partner block')
+        ));
     }
 }
 
