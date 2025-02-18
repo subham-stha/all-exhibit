@@ -85,5 +85,13 @@ function theme_acf_blocks_init()
             'icon'              =>  'slides',
             'keywords'          =>  array('AllEx services', 'solution block')
         ));
+        acf_register_block(array(
+            'name'              => 'latest-project-block',
+            'title'             => __('latest project block'),
+            'render_callback'   => 'theme_acf_block_render',
+            'category'          => 'allexhibit-blocks',
+            'icon'              =>  'slides',
+            'keywords'          =>  array('AllEx services', 'latest project block')
+        ));
     }
 }
