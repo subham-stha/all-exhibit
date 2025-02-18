@@ -2,10 +2,9 @@
 function ae_theme_setup()
 {
     //Add support for editor styles
-    // add_theme_support('editor-styles');
-    //  add_editor_style('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
-    // add_editor_style('assets/css/style.css'); 
-    // add_editor_style('assets/css/addon.css'); 
+    add_theme_support('editor-styles');
+     add_editor_style('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+    add_editor_style('assets/css/style.css');
 }
 add_action('after_setup_theme', 'ae_theme_setup');
 
